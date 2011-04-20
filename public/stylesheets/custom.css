@@ -221,3 +221,15 @@ div.field, div.actions
 	list-style: square;
 }
 
+/* Users in Index page */
+
+ul.users
+{
+	margin-top: 1em;
+}
+
+.users li 
+{
+	list-style: none;
+}
+
