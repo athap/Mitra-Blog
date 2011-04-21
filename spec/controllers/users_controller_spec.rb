@@ -8,7 +8,7 @@ describe UsersController do
     describe "for non-signed-in users" do
 
       #it "should deny access" do
-       # get :index
+        #get :index
         #response.should redirect_to(signin_path)
         #flash[:notice].should =~ /sign in/i
       #end
@@ -86,6 +86,14 @@ describe UsersController do
     it "should have a profile image" do
       get :show, :id => @user
       response.should have_selector("h1>img", :class => "gravatar")
+    end
+
+    it "should show the user's microposts" do
+      mp1 = Factory(:micropost, :user => @user, :content => "Foo bar")
+      mp2 = Factory(:micropost, :user => @user, :content => "Baz quux")
+      get :show, :id => @user
+      response.should have_selector("span.content", :content => mp1.content)
+      response.should have_selector("span.content", :content => mp2.content)
     end
   end
    
@@ -277,10 +285,10 @@ describe UsersController do
     end
 
     describe "as a non-signed-in user" do
-      it "should deny access" do
-        delete :destroy, :id => @user
-        response.should redirect_to(signin_path)
-      end
+      #it "should deny access" do
+        #delete :destroy, :id => @user
+        #response.should redirect_to(signin_path)
+      #end
     end
 
     describe "as a non-admin user" do
