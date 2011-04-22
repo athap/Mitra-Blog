@@ -2,11 +2,6 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
-# require 'rake'
-task :sample_data => :environment do
-  require 'faker'
-
- # ...
-end
+require 'rake'
 
 SampleApp::Application.load_tasks
