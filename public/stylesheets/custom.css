@@ -302,3 +302,17 @@ form.new_micropost textarea
 	margin-bottom: 0;
 }
 
+.center {
+	text-align: center;
+}
+
+.sign_in_twitter {
+	display: block;
+	text-align: center;	
+	opacity: 1;
+}
+
+.sign_in_twitter:hover {
+	opacity: 0.65;	
+}
+

@@ -22,5 +22,7 @@
   </p>
 
   <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+  <div class="center">or log in with</div>
+  <%= link_to twitter_logo, "/auth/twitter", :class => "sign_in_twitter" %>
 <% end %>
 

@@ -1,0 +1,11 @@
+development:
+  twitter_key: v4ZTsTxoMnik3GIfxLw0Q
+  twitter_secret: LR6UrrpxWP50l4CM7uhNfdySf23SkqX9t92LOAlwk
+
+test:
+  twitter_key: v4ZTsTxoMnik3GIfxLw0Q
+  twitter_secret: LR6UrrpxWP50l4CM7uhNfdySf23SkqX9t92LOAlwk
+
+production:
+  twitter_key: v4ZTsTxoMnik3GIfxLw0Q
+  twitter_secret: LR6UrrpxWP50l4CM7uhNfdySf23SkqX9t92LOAlwk
