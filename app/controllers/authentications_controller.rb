@@ -1,4 +1,6 @@
 class AuthenticationsController < ApplicationController
+	
+	# This creates a new authentication if required
 	def create
 		auth = env['omniauth.auth']
 
